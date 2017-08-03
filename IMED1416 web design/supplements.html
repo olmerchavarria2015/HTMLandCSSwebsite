@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Chavarria-Web Design lab</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <style>
+        h3 {
+            color: rgb(40, 110, 163);
+            font-weight: bold;
+        }
+        
+        strong {
+            color: rgb(205, 154, 92);
+        }
+        
+        .pics {
+            display: inline-block;
+            margin: 100px;
+            margin-top: 30px;
+        }
+        
+        .effect {
+            overflow: hidden;
+            margin: 100px;
+            margin-top: 10px;
+            width: 80%;
+            height: 20px;
+            background: #d3afe1;
+            -webkit-transition: height 2s;
+            transition: height 2s;
+        }
+        
+        .effect:hover {
+            height: 200px;
+        }
+        
+        #frame1 {
+            background: url(supple.jpg) 200px 200px;
+            width: 150px;
+            height: 150px;
+        }
+        
+        #frame2 {
+            background: url(supple.jpg) 300px 200px;
+            width: 150px;
+            height: 150px;
+        }
+        
+        #frame3 {
+            background: url(supple.jpg) 450px 240px;
+            width: 150px;
+            height: 150px;
+        }
+        @media screen and (max-width: 750px) {
+            .effect {
+             margin: 20px;
+            }
+            #supplePic {
+            width: 100%;
+            height: 200px;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <a name="bysTag"></a>
+    <header>
+        <div id="mainNav">
+            <h3>
+        <nav class="navbar">
+            <hr>
+            <a href="index.html"><img  src="mainLogo.png" alt="main logo"></a>
+            <a href="carbs.html"> CARBS </a> |
+            <a href="proteins.html"> PROTEINS </a> |
+            <a href="mind.html"> MIND </a> |
+            <a href="body.html"> BODY </a> |
+            <a href="supplements.html"> SUPPLEMENTS </a> |
+            <a href="about.html"> ABOUT US </a> 
+            <hr>
+        </nav>
+        </h3>
+        </div>
+        
+        <div id="mobileNav">
+            <div class="navbar" id="exul">
+                <hr>
+                <div class="dropdown">
+                    
+                    <a href="#" class="dropdown-btn"><img width="130" height="50" src="mainLogo.png" alt="mobile menu"></a>
+                    
+                    <div class="dropdown-menu">
+                        <a href="index.html"> HOME </a>
+                        <a href="mind.html"> MIND </a>
+                        <a href="body.html"> BODY </a>
+                        <a href="carbs.html"> CARBS </a>
+                        <a href="proteins.html"> PROTEINS </a>
+                        <a href="supplements.html"> SUPPLEMENTS </a>
+                        <a href="about.html"> ABOUT US </a>
+                        
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+    
+    </header>
+
+
+    <section class="main">
+        <div class="card">
+            <div class="container">
+                <img class="roundCorners" id="supplePic" src="supple.jpg" alt="supplements">
+                <!--
+                <h4>Hover over the purple line</h4>
+                <div class="effect"><h3>Under construction</h3>
+                <strong>
+                    Coming soon, we are gathering content
+                </strong></div>
+                -->
+                <h3>A Beginner’s Guide to Workout Supplements</h3>
+                <p>
+                    If you are new to lifting weights it can be difficult to know where to start or how much money you should be spending on supplements. It’s important to make sure that your nutrition and training are where they should be to get the most benefits from your supplements.As a beginner it is important not to weight train for more than four days a week and no more than an hour at a time. You need to allow for a healing period to get the results you want and overtraining won’t get you the results you need.It’s important to take supplements as part of your training because it gives you the necessary nutrients to build muscle.The only drawback to supplements is taking too many. They should be a supplement to your diet and not something that replaces food. Supplements can also be expensive so if you’re taking them long term you need to keep that in mind.
+                    A dietary supplement is a product intended for ingestion that contains a "dietary ingredient" intended to add further nutritional value to (supplement) the diet. A "dietary ingredient" may be one, or any combination, of the following substances:
+                    a vitamin, a mineral, a herb or other botanical an amino acid, a dietary substance for use by people to supplement the diet by increasing the total dietary intake, a concentrate, metabolite, constituent, or extract.
+                    Dietary supplements may be found in many forms such as tablets, capsules, softgels, gelcaps, liquids, or powders. Some dietary supplements can help ensure that you get an adequate dietary intake of essential nutrients; others may help you reduce your risk of disease.
+                </p>
+                <br>
+                <div class="pics" id="frame1">
+                </div>
+                <div class="pics" id="frame2">
+                </div>
+                <div class="pics" id="frame3">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <hr>
+        <p>For questions contact me at
+        </p>
+        <a href="mailto:olmerchavarri@gmail.com">olmerchavarri@gmail.com</a>
+        <p>
+            <sup>©</sup> Original design by ALex Chavarria 2017
+        </p>
+        <a href="#bysTag">Back to the top</a>
+        <hr>
+    </footer>
+</body>
+
+</html>

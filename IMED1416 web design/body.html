@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Chavarria-Web Design lab</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+
+    <style>
+        .main {
+            height: auto;
+        }
+        
+        body {
+            background-image: url('Male-Fitness-Models.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        
+        html {
+            background: rgb(0, 0, 0);
+        }
+        
+        #leftDiv {
+            background-color: rgba(211, 211, 211, 0.1);
+            width: 80%;
+            border: 5px solid blue;
+            color: azure;
+            padding: 10px;
+            margin: 25px auto;
+        }
+        
+        
+        #gymImage {
+            width: 100%;
+            height: 100%;
+            border: 5px solid blue;
+        }
+        
+        .center {
+            margin: auto;
+            width: 100%;
+            height: auto padding: 25px;
+        }
+        
+        
+        #walk {
+            align-items: center;
+            margin: auto;
+            background: url(spritestrip.png);
+            width: 256px;
+            height: 256px;
+            animation: walking 1.0s steps(6) infinite;
+        }
+        
+        @keyframes walking {
+            from {
+                background-position: 0px;
+            }
+            to {
+                background-position: -1536px;
+            }
+        }
+        @media handheld, screen and (max-width: 750px) {
+            #navbar h2, a {
+                display:none;
+                } 
+            #navbar {
+                display:none;
+                }            
+        }
+    </style>
+</head>
+
+<body>
+
+    <a name="bysTag"></a>
+    <header>
+        <div id="mainNav">
+            <h3>
+        <nav class="navbar">
+            <hr>
+            <a href="index.html"><img  src="mainLogo.png" alt="main logo"></a>
+            <a href="carbs.html"> CARBS </a> |
+            <a href="proteins.html"> PROTEINS </a> |
+            <a href="mind.html"> MIND </a> |
+            <a href="body.html"> BODY </a> |
+            <a href="supplements.html"> SUPPLEMENTS </a> |
+            <a href="about.html"> ABOUT US </a> 
+            <hr>
+        </nav>
+        </h3>
+        </div>
+        
+        <div id="mobileNav">
+            <div class="navbar" id="exul">
+                <hr>
+                <div class="dropdown">
+                    
+                    <a href="#" class="dropdown-btn"><img width="130" height="50" src="mainLogo.png" alt="mobile menu"></a>
+                    
+                    <div class="dropdown-menu">
+                        <a href="index.html"> HOME </a>
+                        <a href="mind.html"> MIND </a>
+                        <a href="body.html"> BODY </a>
+                        <a href="carbs.html"> CARBS </a>
+                        <a href="proteins.html"> PROTEINS </a>
+                        <a href="supplements.html"> SUPPLEMENTS </a>
+                        <a href="about.html"> ABOUT US </a>
+                        
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+    
+    </header>
+
+
+    <section class="main">
+
+        <div class="center">
+            <div id="walk"></div>
+            <div id="leftDiv">
+                <h3>Suitable Exercise</h3>
+                <p>To find a suitable level of exercise for your body, start gently and slowly increase the intensity and the length of time that you exercise for. Exercise should challenge your body and be at a greater intensity than your usual level of daily activity.Don’t go crazy or you may suffer in the morning! However, don’t be shy about getting hot and sweaty during your workouts but make sure that you can still talk. Your aim should be to gradually increase your activity levels over time. As your body adapts to meet the new challenges that you set for it your routine will become easier. When it gets easier it is time to increase the exercise intensity or try something new. Choose a type of exercise that you will enjoy, that way you are more likely to continue doing it on a regular basis. Exercising with friends and family is a sociable way to keep fit, you will be able to motivate each other when one of you loses momentum.
+                </p>
+                <h4>Remember</h4>
+                <p>“Commitment means staying loyal to what you said you were going to do long after the mood you said it in has left you.”</p>
+                <p>"It never gets easier. You just get better"</p>
+                <h3>BMR</h3> Everyday your body burns a specific number of calories just by existing. This is known as your Basal Metabolic Rate. The BMR is based on your weight, height and age. <a href="https://www.iifym.com/bmr-calculator/">(Calculate your BMR here)</a>. When you exercise or simply expend energy through physical activity, you burn additional calories.
+                <h3>TDEE</h3> When you combine your BMR with the calories you burn through physical activity, you get your Total Daily Energy Expenditure. <a href="https://www.iifym.com/tdee-calculator/">(Calculate your TDEE here)</a>.
+                <h3>So How Do I Lose Weight?</h3> You lose weight by having a calorie deficit. A calorie deficit is eating less than your body needs to maintain itself and thus creating a deficit. Ever had more bills than you had money? You had a financial deficit. A calorie deficit is having less energy than you need to stay the same weight. Let’s say that based on your age, weight, and height your BMR is 1700 calories and through some physical activity you end up with a TDEE of 2300 calories. To maintain weight you simply eat 2300 calories every day. To gain weight you eat more than your TDEE and to lose weight you eat less.
+            </div>
+
+            <img id="gymImage" src="PageBanner-fitnesscenter.png" alt="gym">
+
+        </div>
+    </section>
+    <footer class="footer">
+        <hr>
+        <p>For questions contact me at
+        </p>
+        <a href="mailto:olmerchavarri@gmail.com">olmerchavarri@gmail.com</a>
+        <p>
+            <sup>©</sup> Original design by ALex Chavarria 2017
+        </p>
+        <a href="#bysTag">Back to the top</a>
+        <hr>
+    </footer>
+</body>
+
+</html>

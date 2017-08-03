@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Chavarria-Web Design lab</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <script src="animationPolyfill.js"></script>
+    <script src="eyes2.js"></script>
+    <style>
+        h3 {
+            color: rgb(40, 110, 163);
+            font-weight: bold;
+        }
+        
+        strong {
+            color: rgb(205, 154, 92);
+        }
+
+.frame {
+  width: 600px;
+  margin: 2em auto;
+  overflow: hidden;
+  background: rgb(135,206,250);
+  border-radius: 5px;
+  box-shadow: 12px -5px 15px -4px rgba(31, 73, 125, 0.4), -12px -5px 8px -4px rgba(31, 73, 125, 0.4);
+}
+
+.message, .contact, .name, .footer, header, textarea  {
+ display: block;
+ padding: 0;
+ margin: 0;
+ border: 0;
+ clear: both;
+ overflow: hidden;
+}
+
+.first, .last {
+  float: left;
+  width: 278px;
+  margin: 0;
+  padding: 0 0 0 20px;
+  border: 1px solid rgba(0,0,0,.1);
+  height: 50px;
+}
+
+.last {
+  width: 279px;
+  border-left: 0;  
+}
+
+.email {
+  height: 50px;
+  width: 578px;
+  line-height: 50px;
+  padding: 0 0 0 20px;
+  border-top: 0;
+  border-left: 1px solid rgba(0,0,0,.1);
+  border-right: 1px solid rgba(0,0,0,.1);
+  border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+textarea {
+  @extend .email;
+  height: 200px;
+    width: 100%;
+}
+
+  button {
+    height: 32px;
+    background: rgba(231, 76, 60,1.0);
+    border-radius: 5px;
+    border: 0;
+    margin: 7px 0;
+    color: rgba(255,255,255,1);
+    padding: 0 20px 0 20px;
+    border-bottom: 3px solid rgba(192, 57, 43,1.0);
+    text-align: center;
+    cursor:pointer;
+  }
+@media screen and (max-width: 750px) {
+    .frame {
+        width: auto;
+    }
+        
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <a name="bysTag"></a>
+    <header>
+        <div id="mainNav">
+            <h3>
+        <nav class="navbar">
+            <hr>
+            <a href="index.html"><img  src="mainLogo.png" alt="main logo"></a>
+            <a href="carbs.html"> CARBS </a> |
+            <a href="proteins.html"> PROTEINS </a> |
+            <a href="mind.html"> MIND </a> |
+            <a href="body.html"> BODY </a> |
+            <a href="supplements.html"> SUPPLEMENTS </a> |
+            <a href="about.html"> ABOUT US </a> 
+            <hr>
+        </nav>
+        </h3>
+        </div>
+        
+        <div id="mobileNav">
+            <div class="navbar" id="exul">
+                <hr>
+                <div class="dropdown">
+                    
+                    <a href="#" class="dropdown-btn"><img width="130" height="50" src="mainLogo.png" alt="mobile menu"></a>
+                    
+                    <div class="dropdown-menu">
+                        <a href="index.html"> HOME </a>
+                        <a href="mind.html"> MIND </a>
+                        <a href="body.html"> BODY </a>
+                        <a href="carbs.html"> CARBS </a>
+                        <a href="proteins.html"> PROTEINS </a>
+                        <a href="supplements.html"> SUPPLEMENTS </a>
+                        <a href="about.html"> ABOUT US </a>
+                        
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+    
+    </header>
+
+
+    <section class="main">
+        <div class="card">
+            <div class="container">
+                <h3>Thank You for visiting</h3>
+                <p>Hello, My Name is Alex Chavarria. I'am an aspiring Software Engineer from Dallas TX.
+                  the information on this site has been gathered form various websites. if you have any suggestion or comment feel free to contact me directly at 
+                    <a href="mailto:olmerchavarri@gmail.com">olmerchavarri@gmail.com</a>
+                    or leave a message down below
+                </p>
+                <form method="post" action="mailto:emailaddress@maildomain.ext">
+                <div class='frame'>
+                    <header>
+                        <h1>Have Questions or Comments?</h1>
+                    </header>
+                    <p style="margin-top: 0px">
+                        Im a:
+                      <label>
+                          <input type="radio" id="genderBoy" name="gender" value="Boy" checked>
+                           Boy
+                      </label>
+                      <label>
+                          <input type="radio" id="genderGirl" name="gender" value="Girl">
+                           Girl
+                      </label>
+                      <label>
+                          <input type="radio" id="Unknown" name="gender" value="Unknown">
+                          Unknown
+                      </label>
+                      <br>
+                      <label>
+                          <input type="checkbox" name="donate" id="donate" value="yes" checked>
+                          I'd like to donate $5 to this site.
+                      </label><br>
+                     <label for="reason">Reason for contact:</label>
+                          <select name="reason" id="reason">
+                              <option value="">Please select one:</option>
+                              <option value="compliment">I really like your site</option>
+                              <option value="suggestion">Your information is outdated</option>
+                              <option value="complaint">Ur site ugly, consider career change</option>
+                    </select>
+                    </p>
+                    
+                    <div class='name'>
+                        <input class='first' placeholder='First Name' type='text' placeholder="Please enter full name" required autofocus>
+                        <input class='last' placeholder='Last Name' type='text'>
+                    </div>
+                    <div class='contact'>
+                        <input class='email' placeholder='E-mail Address' type='text' placeholder="Valid email is required">
+                    </div>
+                    <div class='message'>
+                        <textarea placeholder='Write your question or comment Here!'></textarea>
+                    </div>
+                    <footer>
+                        <button> SEND </button>
+                    </footer>
+                </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <hr>
+        <p>For questions contact me at
+        </p>
+        <a href="mailto:olmerchavarri@gmail.com">olmerchavarri@gmail.com</a>
+        <p>
+            <sup>©</sup> Original design by ALex Chavarria 2017
+        </p>
+        <a href="#bysTag">Back to the top</a>
+        <hr>
+    </footer>
+</body>
+
+</html>

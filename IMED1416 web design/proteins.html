@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Chavarria-Web Design lab</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <style>
+        div.card {
+            width: auto;
+        }
+        
+        h3 {
+            color: rgb(40, 110, 163);
+            font-weight: bold;
+        }
+        
+        strong {
+            color: rgb(205, 154, 92);
+        }
+        
+        p {
+            padding: 10px;
+        }
+        
+        #proteinPic {
+            height: 500px;
+            width: 100%;
+            padding: 0px;
+        }
+        
+        div.container {
+            padding: 0px;
+        }
+        
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            margin: 15px;
+        }
+        li {
+            margin-left:-35px;
+        }
+        @media screen and (max-width: 750px) {
+            table,
+        th,
+        td {
+            display: none;
+        }
+            #proteinPic {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a name="bysTag"></a>
+    <header>
+        <div id="mainNav">
+            <h3>
+        <nav class="navbar">
+            <hr>
+            <a href="index.html"><img  src="mainLogo.png" alt="main logo"></a>
+            <a href="carbs.html"> CARBS </a> |
+            <a href="proteins.html"> PROTEINS </a> |
+            <a href="mind.html"> MIND </a> |
+            <a href="body.html"> BODY </a> |
+            <a href="supplements.html"> SUPPLEMENTS </a> |
+            <a href="about.html"> ABOUT US </a> 
+            <hr>
+        </nav>
+        </h3>
+        </div>
+        
+        <div id="mobileNav">
+            <div class="navbar" id="exul">
+                <hr>
+                <div class="dropdown">
+                    
+                    <a href="#" class="dropdown-btn"><img width="130" height="50" src="mainLogo.png" alt="mobile menu"></a>
+                    
+                    <div class="dropdown-menu">
+                        <a href="index.html"> HOME </a>
+                        <a href="mind.html"> MIND </a>
+                        <a href="body.html"> BODY </a>
+                        <a href="carbs.html"> CARBS </a>
+                        <a href="proteins.html"> PROTEINS </a>
+                        <a href="supplements.html"> SUPPLEMENTS </a>
+                        <a href="about.html"> ABOUT US </a>
+                        
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+    
+    </header>
+
+
+    <section class="main">
+        <div class="card">
+            <div class="container">
+                <img id="proteinPic" src="proteins.jpg" alt="Proteins">
+                <h3>What are proteins and what do they do?</h3>
+                <p>
+                    Proteins are large, complex molecules that play many critical roles in the body. They do most of the work in cells and are required for the structure, function, and regulation of the body’s tissues and organs. Proteins are made up of hundreds or thousands of smaller units called amino acids, which are attached to one another in long chains. There are 20 different types of amino acids that can be combined to make a protein. The sequence of amino acids determines each protein’s unique 3-dimensional structure and its specific function.
+                </p>
+                <table>
+                    <caption style="margin-bottom:10px"><strong>Examples of protein functions</strong></caption>
+                    <colgroup>
+                        <col style="background-color:rgb(120,170,230)">
+                        <col style="background-color:rgb(150,249,237)">
+                        <col style="background-color:rgb(175,178,230)">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>Function</th>
+                            <th>Description</th>
+                            <th>Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Antibody</th>
+                            <td>Antibodies bind to specific foreign particles, such as viruses and bacteria, to help protect the body.</td>
+                            <td>Immunoglobulin G (IgG)</td>
+                        </tr>
+                        <tr>
+                            <th>Enzyme</th>
+                            <td>Enzymes carry out almost all of the thousands of chemical reactions that take place in cells. They also assist with the formation of new molecules by reading the genetic information stored in DNA.</td>
+                            <td>Phenylalanine hydroxylase </td>
+                        </tr>
+                        <tr>
+                            <th>Messenger</th>
+                            <td>Messenger proteins, such as some types of hormones, transmit signals to coordinate biological processes between different cells, tissues, and organs.</td>
+                            <td>Growth hormone</td>
+                        </tr>
+                        <tr>
+                            <th>Structural component</th>
+                            <td>These proteins provide structure and support for cells. On a larger scale, they also allow the body to move.</td>
+                            <td>Actin</td>
+                        </tr>
+                        <tr>
+                            <th>Transport/storage</th>
+                            <td>These proteins bind and carry atoms and small molecules within cells and throughout the body.</td>
+                            <td>Ferritin</td>
+                        </tr>
+                        <tr>
+                        <td colspan=3>Important: The fat content on every source of proteins is different, this important to remember when macros are being counted.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+                <strong>Protein Rich Foods</strong>
+                <ul style="list-style-type:none">
+                    <li>Eggs</li>
+                    <li>Chicken Breast</li>
+                    <li>Milk</li>
+                    <li>Greek Yogurt</li>
+                    <li>Broccoli</li>
+                    <li>Tuna</li>
+                    <li>Lean Beef</li>
+                </ul>
+                <strong>Important Note</strong>
+                <p style="padding-bottom: 100px;">
+                    Along with fat and carbohydrates, protein is a "macronutrient," meaning that the body needs relatively large amounts of it. Vitamins and minerals, which are needed in only small quantities, are called "micronutrients." But unlike fat and carbohydrates, the body does not store protein, and therefore has no reservoir to draw on when it needs a new supply.
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <hr>
+        <p>For questions contact me at
+        </p>
+        <a href="mailto:olmerchavarri@gmail.com">olmerchavarri@gmail.com</a>
+        <p>
+            <sup>©</sup> Original design by ALex Chavarria 2017
+        </p>
+        <a href="#bysTag">Back to the top</a>
+        <hr>
+    </footer>
+</body>
+
+</html>
